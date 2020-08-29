@@ -17,6 +17,7 @@ public class WebMvc implements WebMvcConfigurer {
                 "/webjars/**",
                 "/img/**",
                 "/css/**",
+                "/min.css/**",
                 "/js/**",
                 "/min/**")
 
