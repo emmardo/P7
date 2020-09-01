@@ -10,10 +10,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -46,13 +43,13 @@ public class BidListController {
     }
 
     @PostMapping("/bidList/validate")
-    public String validate(@Valid BidList bid, BindingResult result, Model model) {
+    public String validate(@Valid @ModelAttribute("bidList")BidList bidList, BindingResult result, Model model) {
         // TODO: check data valid and save to db, after saving return bid list
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         if (!result.hasErrors()) {
-            bidListRepository.save(bid);
+            bidListRepository.save(bidList);
             model.addAttribute("bidLists", bidListRepository.findAll());
             logger.info("POST /bidList/validate request SUCCESSFUL from USER: " + authentication.getName());
             return "redirect:/bidList/list";
