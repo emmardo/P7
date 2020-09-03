@@ -22,6 +22,10 @@ public class Rating {
         this.orderNumber = orderNumber;
     }
 
+    public Rating(){
+
+    }
+
     public Integer getId() {
         return id;
     }

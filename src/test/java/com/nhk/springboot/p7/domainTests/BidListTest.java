@@ -33,7 +33,7 @@ public class BidListTest {
     private String side = "";
 
     @Test
-    public void parameterizedConstructor() {
+    public void parameterisedConstructor() {
 
         //Act
         BidList newBidList = new BidList(account, type, security, bidQuantity);
@@ -56,7 +56,6 @@ public class BidListTest {
 
         //Assert
         assertEquals(bidListId, newBidList.getBidListId());
-
     }
 
     @Test
@@ -69,8 +68,7 @@ public class BidListTest {
         newBidList.setAccount(account);
 
         //Assert
-        assertEquals(account , newBidList.getAccount());
-
+        assertEquals(account, newBidList.getAccount());
     }
 
     @Test
@@ -83,8 +81,7 @@ public class BidListTest {
         newBidList.setType(type);
 
         //Assert
-        assertEquals(type , newBidList.getType());
-
+        assertEquals(type, newBidList.getType());
     }
 
     @Test
@@ -97,8 +94,7 @@ public class BidListTest {
         newBidList.setBidQuantity(bidQuantity);
 
         //Assert
-        assertEquals(bidQuantity , newBidList.getBidQuantity());
-
+        assertEquals(bidQuantity, newBidList.getBidQuantity());
     }
 
     @Test
@@ -111,8 +107,7 @@ public class BidListTest {
         newBidList.setAskQuantity(askQuantity);
 
         //Assert
-        assertEquals(askQuantity , newBidList.getAskQuantity());
-
+        assertEquals(askQuantity, newBidList.getAskQuantity());
     }
 
     @Test
@@ -125,8 +120,7 @@ public class BidListTest {
         newBidList.setBid(bid);
 
         //Assert
-        assertEquals(bid , newBidList.getBid());
-
+        assertEquals(bid, newBidList.getBid());
     }
 
     @Test
@@ -139,8 +133,7 @@ public class BidListTest {
         newBidList.setAsk(ask);
 
         //Assert
-        assertEquals(ask , newBidList.getAsk());
-
+        assertEquals(ask, newBidList.getAsk());
     }
 
     @Test
@@ -153,8 +146,7 @@ public class BidListTest {
         newBidList.setBenchmark(benchmark);
 
         //Assert
-        assertEquals(benchmark , newBidList.getBenchmark());
-
+        assertEquals(benchmark, newBidList.getBenchmark());
     }
 
     @Test
@@ -167,8 +159,7 @@ public class BidListTest {
         newBidList.setBidListDate(bidListDate);
 
         //Assert
-        assertEquals(bidListDate , newBidList.getBidListDate());
-
+        assertEquals(bidListDate, newBidList.getBidListDate());
     }
 
     @Test
@@ -181,8 +172,7 @@ public class BidListTest {
         newBidList.setCommentary(commentary);
 
         //Assert
-        assertEquals(commentary , newBidList.getCommentary());
-
+        assertEquals(commentary, newBidList.getCommentary());
     }
 
     @Test
@@ -195,8 +185,7 @@ public class BidListTest {
         newBidList.setSecurity(security);
 
         //Assert
-        assertEquals(security , newBidList.getSecurity());
-
+        assertEquals(security, newBidList.getSecurity());
     }
 
     @Test
@@ -209,8 +198,7 @@ public class BidListTest {
         newBidList.setStatus(status);
 
         //Assert
-        assertEquals(status , newBidList.getStatus());
-
+        assertEquals(status, newBidList.getStatus());
     }
 
     @Test
@@ -223,8 +211,7 @@ public class BidListTest {
         newBidList.setTrader(trader);
 
         //Assert
-        assertEquals(trader , newBidList.getTrader());
-
+        assertEquals(trader, newBidList.getTrader());
     }
 
     @Test
@@ -237,8 +224,7 @@ public class BidListTest {
         newBidList.setBook(book);
 
         //Assert
-        assertEquals(book , newBidList.getBook());
-
+        assertEquals(book, newBidList.getBook());
     }
 
     @Test
@@ -251,8 +237,7 @@ public class BidListTest {
         newBidList.setCreationName(creationName);
 
         //Assert
-        assertEquals(creationName , newBidList.getCreationName());
-
+        assertEquals(creationName, newBidList.getCreationName());
     }
 
     @Test
@@ -265,8 +250,7 @@ public class BidListTest {
         newBidList.setCreationDate(creationDate);
 
         //Assert
-        assertEquals(creationDate , newBidList.getCreationDate());
-
+        assertEquals(creationDate, newBidList.getCreationDate());
     }
 
     @Test
@@ -279,8 +263,7 @@ public class BidListTest {
         newBidList.setRevisionName(revisionName);
 
         //Assert
-        assertEquals(revisionName , newBidList.getRevisionName());
-
+        assertEquals(revisionName, newBidList.getRevisionName());
     }
 
     @Test
@@ -293,8 +276,7 @@ public class BidListTest {
         newBidList.setRevisionDate(revisionDate);
 
         //Assert
-        assertEquals(revisionDate , newBidList.getRevisionDate());
-
+        assertEquals(revisionDate, newBidList.getRevisionDate());
     }
 
     @Test
@@ -307,8 +289,7 @@ public class BidListTest {
         newBidList.setDealName(dealName);
 
         //Assert
-        assertEquals(dealName , newBidList.getDealName());
-
+        assertEquals(dealName, newBidList.getDealName());
     }
 
     @Test
@@ -321,8 +302,7 @@ public class BidListTest {
         newBidList.setDealType(dealType);
 
         //Assert
-        assertEquals(dealType , newBidList.getDealType());
-
+        assertEquals(dealType, newBidList.getDealType());
     }
 
     @Test
@@ -335,8 +315,7 @@ public class BidListTest {
         newBidList.setSourceListId(sourceListId);
 
         //Assert
-        assertEquals(sourceListId , newBidList.getSourceListId());
-
+        assertEquals(sourceListId, newBidList.getSourceListId());
     }
 
     @Test
@@ -349,7 +328,6 @@ public class BidListTest {
         newBidList.setSide(side);
 
         //Assert
-        assertEquals(side , newBidList.getSide());
-
+        assertEquals(side, newBidList.getSide());
     }
 }

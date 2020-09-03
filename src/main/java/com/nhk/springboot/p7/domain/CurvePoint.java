@@ -17,10 +17,13 @@ public class CurvePoint {
     private Double value;
     private Timestamp creationDate;
 
-    public CurvePoint(Integer id, Double term, Double value) {
-        this.id = id;
+    public CurvePoint(Double term, Double value) {
         this.term = term;
         this.value = value;
+    }
+
+    public CurvePoint(){
+
     }
 
     public Integer getId() {

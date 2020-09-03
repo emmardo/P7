@@ -16,10 +16,22 @@ public class User {
     @NotBlank(message = "Password is mandatory")
     @ValidPassword
     private String password;
-    @NotBlank(message = "FullName is mandatory")
-    private String fullname;
+    @NotBlank(message = "Full Name is mandatory")
+    private String fullName;
     @NotBlank(message = "Role is mandatory")
     private String role;
+
+    public User(String username,String password,String fullName,String role) {
+
+        this.username = username;
+        this.password = password;
+        this.fullName = fullName;
+        this.role = role;
+    }
+
+    public User() {
+
+    }
 
     public Integer getId() {
         return id;
@@ -45,12 +57,12 @@ public class User {
         this.password = password;
     }
 
-    public String getFullname() {
-        return fullname;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public String getRole() {
