@@ -33,9 +33,10 @@ public class BidList {
     private String sourceListId;
     private String side;
 
-    public BidList(String account, String type, Double bidQuantity) {
+    public BidList(String account, String type, String security, Double bidQuantity) {
         this.account = account;
         this.type = type;
+        this.security = security;
         this.bidQuantity = bidQuantity;
     }
 
